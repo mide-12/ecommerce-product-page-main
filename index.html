@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <header id="header-container">
+    <div class="left">
+        <div class="logo">
+          <img src="./images/icon-menu.svg" class="icon-menu">
+          <img src="./images/logo.svg">
+        </div>
+        <nav>
+          <ul id="nav-bar">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div class=" right">
+      <div>
+        <img src="./images/icon-cart.svg" alt="cart" id="cart-icon">
+      </div>
+  
+      <div>
+        <img src="./images/image-avatar.png" alt="avatar" id="avatar-image">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="section-1">
+      <img src="./images/image-product-1.jpg" alt="shoe image" id="product-1">
+      <div id="product-selection">
+        <img src="./images/image-product-1-thumbnail.jpg" class="image-size1">
+        <img  src="./images/image-product-2-thumbnail.jpg" class="image-size">
+        <img src="./images/image-product-3-thumbnail.jpg" class="image-size">
+        <img src="./images/image-product-4-thumbnail.jpg" class="image-size">
+      </div>
+    </section>
+    <section id="section-2">
+     <h2>Sneaker Company</h2>
+        <h3>Fall Limited Edition Sneakers</h3>
+        <p id="details">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div id="price-section">
+            <div id="price">
+              <p id="new-price">$125.00</p>
+              <p id="reduction-rate">50%</p>
+            </div>
+            <p id="old-price"><del>$250.00</del></p>
+        </div>
+        <div class="order-buttons">
+          <div id="quantity-buttons">
+            <div>
+              <img src="./images/icon-minus.svg" alt="minus sign">
+            </div>
+            <p>0</p>
+            <div>
+              <img src="./images/icon-plus.svg" alt="plus sign" class="plus-sign">
+            </div>
+          </div>
+          <button>
+            <img src="./images/icon-cart.svg" class="cart-image">
+            <p>Add to cart</p>
+          </button>
+        </div>
+    </section>
+  </main>
+
+  
+</body>
+</html>

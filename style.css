@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family:  "Outfit", sans-serif;
+	background-color: hsl(0, 0%, 100%);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+  
+#header-container {
+	border-bottom: 2px solid hsl(223, 64%, 98%);
+	width: 1000px;
+	height: 70px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;
+	background-color: hsl(0, 0%, 100%);
+}
+
+#header-container .logo {
+    display: flex;
+    gap: 10px;
+}
+
+#header-container .logo img:first-child {
+    display: none;
+}
+
+#header-container .left {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+
+#header-container .right {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+a {
+	text-decoration: none;
+	color:  hsl(219, 9%, 45%);
+}
+
+#avatar-image {
+	width: 50px;
+	border-radius: 50%;
+}
+
+#product-1 {
+	width: 350px;
+	border-radius: 20px;
+}
+
+.image-size {
+	width: 80px;
+	border-radius: 10px;
+}
+
+.image-size1 {
+	width: 80px;
+	border-radius: 10px;
+	border: 3px solid hsl(26, 100%, 55%);
+}
+
+.cart-image {
+    width: 15px;
+}
+
+#avatar-image:hover {
+	border: 2px solid hsl(26, 100%, 55%);
+}
+
+main {
+	width: 140vh;
+	background-color: hsl(0, 0%, 100%);
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	gap: 100px;
+	flex: 1;
+}
+
+#section-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+#product-selection {
+	display: flex;
+	gap: 10px;
+}
+
+#section-2 h2 {
+	color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#section-2 h3 {
+	margin-top: 10px;
+    color: hsl(0, 0%, 10%);
+    font-size: 35px;
+}
+
+#section-2 #details {
+	color: hsl(219, 9%, 45%);
+    margin-top: 15px;
+    line-height: 27px;
+}
+
+#price-section {
+	display: flex;
+	flex-direction: column;
+}
+
+#price-section #price {
+	display: flex;
+	gap: 20px;
+	margin-top: 15px;
+	align-items: center;
+}
+
+#price #new-price {
+	font-size: 25px;
+	color: hsl(0, 0%, 10%);
+}
+
+#price #reduction-rate {
+	color:hsl(26, 100%, 55%);
+    font-size: 15px;
+	width: 40px;
+	height: 20px;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 5px;
+	text-align: center;
+}
+
+#price-section #old-price {
+	color: hsl(219, 9%, 45%);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#quantity-buttons {
+	display: flex;
+    justify-content: center;
+	gap: 25px;
+	align-items: center;
+    background-color: hsl(223, 64%, 98%);
+    width: 100px;
+	height: 30px;
+    align-items: center;
+	border-radius: 4px;
+}
+
+.order-buttons button {
+	width: 180px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	background-color: hsl(26, 100%, 55%);
+    color: hsl(223, 64%, 98%);
+	border: 1px solid hsl(26, 100%, 55%);
+	border-radius: 8px;
+}
+
+.order-buttons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+
+@media screen and ( max-width: 1030px ) {
+	#header-container {
+		width: 95%;
+	}
+
+	main {
+		gap: 50px;
+	}
+}
+
+@media screen and ( max-width: 710px ) {
+	#header-container .logo img:first-child {
+		display: block;
+	}	
+
+	#header-container nav {
+		display: none;
+	}
+}
+
+@media screen and ( max-width: 970px ) {
+	main {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#section-2 {
+		width: 400px;
+		align-items: center;
+	}
+	
+	#section-1 #product-selection {
+		display: none;
+	}
+
+	#section-1 #product-1 {
+		width: 450px;
+		height: auto;
+		border-radius: 0;
+	}
+
+	.order-buttons {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#quantity-buttons {
+		width: 400px;
+		gap: 180px;
+	}
+
+	.order-buttons button {
+		width: 400px;
+	}
+
+	#price-section {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 200px
+	}
+}
+
+@media screen and ( max-width: 502px ) {
+	#section-2 {
+		width: 280px;
+	}
+
+	#section-1 #product-1 {
+		width: 300px;
+		height: auto;
+	}
+
+	#quantity-buttons {
+		width: 280px;
+		gap: 100px;
+	}
+
+	.order-buttons button {
+		width: 280px;
+	}
+
+	#price-section {
+		gap: 75px;
+	}
+
+	#avatar-image {
+		width: 30px;
+		border-radius: 50%;
+	}
+
+	.cart-image {
+		width: 20px;
+	}
+	
+}
